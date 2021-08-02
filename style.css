@@ -1,6 +1,7 @@
 /* cursor */
 body {
 font-family: "Yomogi",'Homemade Apple', "New Tegomin", serif, cursive !important;
+/* position: relative; */
 }
 
 a,body,.side,
@@ -130,8 +131,12 @@ li:hover {
   background-size: cover;
   background-position: 50% 50%;
   pointer-events: none;
-  z-index: 13;
+		/* opacity: 0.1; */
+  z-index:12;
 }
+/* .z13{position: absolute;
+	z-index: 9999 !important;
+} */
 
 /* adjust */
 dl,
@@ -171,9 +176,9 @@ ul {
 
 
 
-.png{
+/* .png{
 			width: 13vh;
-}
+} */
 
 .button,.actionButton{
 	background: none !important;
@@ -202,7 +207,7 @@ background: rgb(0 0 0 / 40%)
 }
 
 .page1 {
-  z-index: 12 !important;
+  z-index: 13 !important;
 }
 
 .scroll-top img {
@@ -215,4 +220,9 @@ background: rgb(0 0 0 / 40%)
   transition: 0.5s;
 }
 
-
+/* RWD dispaly */
+@media (max-height: 584px) {
+.hideForh584 {
+    display: none !important;
+  }
+}

@@ -3,23 +3,27 @@
 /* ----------------------------------------------- */
 
 /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
+
+// particlesJS.load('particles-js', './particlesjs-config2.json', function() {
+//   console.log('particles.js loaded - callback');
+// });
+
+// const particlesJSON = {}
+// particlesJS('particles-js', particlesJSON)
+
 
 /* Otherwise just put the config content (json): */
 
+const particlesJSON = {}
 particlesJS('particles-js',
   
-  {
+{
   "particles": {
     "number": {
       "value": 100,
       "density": {
         "enable": true,
-        "value_area": 1200
+        "value_area": 800
       }
     },
     "color": {
@@ -41,23 +45,23 @@ particlesJS('particles-js',
       }
     },
     "opacity": {
-      "value": 0.2,
+      "value": 0.3,
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 0.2,
+        "speed": 0.24334650108289202,
         "opacity_min": 0,
         "sync": true
       }
     },
     "size": {
-      "value": 3,
+      "value": 4,
       "random": true,
       "anim": {
-        "enable": true,
-        "speed": 20,
+        "enable": false,
+        "speed": 40,
         "size_min": 0.1,
-        "sync": true
+        "sync": false
       }
     },
     "line_linked": {
@@ -69,12 +73,12 @@ particlesJS('particles-js',
     },
     "move": {
       "enable": true,
-      "speed": 2,
+      "speed": 6,
       "direction": "none",
       "random": true,
-      "straight": true,
+      "straight": false,
       "out_mode": "out",
-      "bounce": true,
+      "bounce": false,
       "attract": {
         "enable": true,
         "rotateX": 600,
@@ -103,11 +107,11 @@ particlesJS('particles-js',
         }
       },
       "bubble": {
-        "distance": 500,
-        "size": 4,
+        "distance": 400,
+        "size": 3,
         "duration": 0.3,
-        "opacity": 0.5,
-        "speed": 2
+        "opacity": 1,
+        "speed": 3
       },
       "repulse": {
         "distance": 200,
@@ -123,5 +127,4 @@ particlesJS('particles-js',
   },
   "retina_detect": true
 }
-
 );
