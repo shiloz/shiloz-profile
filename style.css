@@ -16,8 +16,7 @@ a,body,.side,
 .videoThumbnail,
 .controller li,
 .slider,.clickable {
-  cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Noragami_Yato_Crown_Cursor.png),
-    pointer !important;
+  cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Noragami_Yato_Crown_Cursor.png),auto !important;
 }
 
 /* font */
